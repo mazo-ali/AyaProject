@@ -5,7 +5,7 @@ import speech_recognition as sr
 
 recognizer = sr.Recognizer()
 
-
+# We need to process audio files mp3, or videos mp4/avi... and extract the audio from it
 with sr.Microphone() as source:
     print("Say something:")
     audio = recognizer.listen(source)
